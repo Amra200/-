@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>مواقيت الصلاه</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div id="backgroundImage"></div> -->
+      <h1>مواقيت الصلاة</h1>
+      <div class="city-selector">
+        <label for="city">اختر المدينة:</label>
+        <select id="city" onchange="getPrayerTimes()">
+          <option value="Cairo">القاهرة</option>
+          <option value="Riyadh">الرياض</option>
+          <option value="Istanbul">اسطنبول</option>
+          <option value="mecca">مكه</option>
+          <option value="madina">المدينه</option>
+          <!-- يمكنك إضافة المزيد من المدن هنا -->
+        </select>
+      </div>
+      <div id="prayerTimes"></div>
+      <div id="currentDate"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

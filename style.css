@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 20px;
+  background-image: url(./imags/35.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 600px;
+  margin: 70px auto;
+  backdrop-filter: blur(25px);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: black;
+}
+
+.city-selector {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+select {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+
+#prayerTimes {
+  margin-bottom: 20px;
+}
+
+#prayerTimes p {
+  font-size: 22px;
+}
+#currentDate {
+  font-size: 25px;
+  font-weight: bold;
+}
