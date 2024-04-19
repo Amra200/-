@@ -11,19 +11,24 @@
   <body>
     <div class="container">
       <!-- <div id="backgroundImage"></div> -->
-      <h1>مواقيت الصلاة</h1>
+      <div class="head">
+        <h3>القاهرة <span id="date">19/8/2022 الخميس</span></h3>
+        <h1>مواقيت الصلاة</h1>
+      </div>
       <div class="city-selector">
-        <label for="city">اختر المدينة:</label>
-        <select id="city" onchange="getPrayerTimes()">
-          <option value="Cairo">القاهرة</option>
-          <option value="Riyadh">الرياض</option>
-          <option value="Istanbul">اسطنبول</option>
-          <option value="mecca">مكه</option>
-          <option value="madina">المدينه</option>
+        <label for="city"> اختر المدينة</label>
+        <select id="cityes-select">
           <!-- يمكنك إضافة المزيد من المدن هنا -->
         </select>
       </div>
-      <div id="prayerTimes"></div>
+      <div id="prayerTimes">
+        <p>الفجر<span id="fajr-time">04:00</span></p>
+        <p>الشروق<span id="sunrise-time">04:00</span></p>
+        <p>الظهر<span id="dhuhr-time">04:00</span></p>
+        <p>العصر<span id="asr-time">04:00</span></p>
+        <p>المغرب<span id="sunset-time">04:00</span></p>
+        <p>العشاء<span id="isha-time">04:00</span></p>
+      </div>
       <div id="currentDate"></div>
     </div>
     <script src="./script.js"></script>

@@ -1,6 +1,5 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
   text-align: center;
   padding: 20px;
   background-image: url(./imags/35.jpg);
@@ -10,22 +9,57 @@ body {
 
 .container {
   max-width: 600px;
-  margin: 70px auto;
+  margin: 100px auto;
   backdrop-filter: blur(25px);
   padding: 20px;
+  background-color: #00000069;
   border-radius: 10px;
   color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .head {
+    flex-direction: column;
+  }
+}
+.head h3 {
+  font-size: 54px;
+  margin: 20px 0 0 50px;
+}
+@media (max-width: 767px) {
+  .head h3 {
+    margin: 10px auto;
+  }
+}
+.head h3 span {
+  font-size: 25px;
+  display: block;
+  margin: 10px 0 -10px;
 }
 
 h1 {
-  color: black;
+  color: white;
+  text-align: right;
+  margin-right: 27px;
+  font-size: 43px;
+}
+@media (max-width: 767px) {
+  h1 {
+    margin: 40px auto;
+  }
 }
 
 .city-selector {
   margin-bottom: 20px;
   font-size: 25px;
+  text-align: right;
+  margin-right: 37px;
 }
+
 select {
   padding: 10px;
   border: none;
@@ -35,10 +69,20 @@ select {
 
 #prayerTimes {
   margin-bottom: 20px;
+  display: flex;
+}
+@media (max-width: 767px) {
+  #prayerTimes {
+    flex-direction: column;
+  }
 }
 
 #prayerTimes p {
   font-size: 22px;
+  margin: 20px auto;
+}
+#prayerTimes p span {
+  display: block;
 }
 #currentDate {
   font-size: 25px;
